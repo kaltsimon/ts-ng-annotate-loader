@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "watch": false,
+        "target": "es5",
+        "module": "commonjs",
+        "typeRoots": [
+            "types"
+        ]
+    },
+    "compileOnSave": false,
+    "files": [
+        "gulp-typescript-angular.ts",
+        "index.ts"
+    ]
+}

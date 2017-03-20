@@ -1,0 +1,30 @@
+{
+  "name": "ts-ng-annotate-loader",
+  "version": "0.1.0",
+  "description": "Wrapper around gulp-typescript-angular to use it as a webpack loader.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+      "angularjs",
+      "typescript",
+      "webpack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaltsimon/ts-ng-annotate-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaltsimon/ts-ng-annotate-loader/issues"
+  },
+  "author": "kaltsimon",
+  "license": "MIT",
+  "homepage": "https://github.com/kaltsimon/ts-ng-annotate-loader",
+  "dependencies": {
+    "@types/node": "^6.0.65",
+    "falafel": "^2.0.0",
+    "loader-utils": "^1.1.0",
+    "typescript": "^2.2.1"
+  }
+}
