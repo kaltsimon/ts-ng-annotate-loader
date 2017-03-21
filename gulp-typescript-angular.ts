@@ -24,6 +24,11 @@ interface Options {
   decoratorPatterns?: DecoratorPattern[];
   decoratorModuleName?: string;
   decorator?: boolean;
+  falafelOptions?: {
+      ecmaVersion?:3|5|6|7|8;
+      sourceType?:'script'|'module';
+      tolerant: boolean;
+  };
 }
 
 export function setDefaultValue(opts: Options) {
@@ -57,6 +62,13 @@ export function setDefaultValue(opts: Options) {
       { pattern: /Provider$/, func: 'Provider', removePattern: true },
       { pattern: /Directive$/, func: 'Directive', removePattern: true, firstLowerCase: true }
     ];
+  }
+
+  if (typeof opts.falafelOptions === 'undefined') {
+    opts.falafelOptions = {
+        sourceType: 'script',
+        tolerant: true
+    };
   }
 
 }
@@ -123,7 +135,7 @@ interface DecoratorBlock{
 }
 
 export function transform(contents: string, opts: Options): string {
-  return falafel(contents, { tolerant: true }, function(node: Node) {
+  return falafel(contents, opts.falafelOptions, function(node: Node) {
     findClassDeclaration(node, opts);
   }).toString();
 }

@@ -32,10 +32,16 @@ function setDefaultValue(opts) {
             { pattern: /Directive$/, func: 'Directive', removePattern: true, firstLowerCase: true }
         ];
     }
+    if (typeof opts.falafelOptions === 'undefined') {
+        opts.falafelOptions = {
+            sourceType: 'script',
+            tolerant: true
+        };
+    }
 }
 exports.setDefaultValue = setDefaultValue;
 function transform(contents, opts) {
-    return falafel(contents, { tolerant: true }, function (node) {
+    return falafel(contents, opts.falafelOptions, function (node) {
         findClassDeclaration(node, opts);
     }).toString();
 }
