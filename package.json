@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-      "angularjs",
-      "typescript",
-      "webpack"
+    "angularjs",
+    "typescript",
+    "webpack"
   ],
   "repository": {
     "type": "git",

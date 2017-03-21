@@ -3,12 +3,12 @@
 var utils = require("loader-utils");
 // We use a custom file since we need private functions
 var gulp_typescript_angular_1 = require("./gulp-typescript-angular");
-function loader(source) {
+function loader(source, inputMap) {
     this.cacheable();
     var options = utils.getOptions(this) || {};
     gulp_typescript_angular_1.setDefaultValue(options);
     var output = gulp_typescript_angular_1.transform(source, options);
-    this.callback(null, output);
+    this.callback(null, output, inputMap);
 }
 ;
 module.exports = loader;
