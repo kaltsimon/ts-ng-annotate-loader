@@ -3,7 +3,7 @@
 'use strict';
 
 // import * as through from 'through2';
-import * as falafel from 'falafel';
+import * as falafel from 'falafel-new-acorn';
 
 interface Pattern {
   pattern?: RegExp;

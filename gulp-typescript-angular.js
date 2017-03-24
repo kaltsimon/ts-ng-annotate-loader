@@ -1,7 +1,7 @@
 /// <reference path="./types.d.ts" />
 'use strict';
 // import * as through from 'through2';
-var falafel = require("falafel");
+var falafel = require("falafel-new-acorn");
 function setDefaultValue(opts) {
     if (typeof opts.ignore === 'undefined') {
         opts.ignore = /^\$/;
