@@ -1,6 +1,5 @@
 /// <reference path="./types.d.ts" />
 'use strict';
-Object.defineProperty(exports, "__esModule", { value: true });
 // import * as through from 'through2';
 var falafel = require("falafel");
 function setDefaultValue(opts) {

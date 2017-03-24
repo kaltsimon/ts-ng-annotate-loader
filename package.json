@@ -22,7 +22,7 @@
   "license": "MIT",
   "homepage": "https://github.com/kaltsimon/ts-ng-annotate-loader",
   "dependencies": {
-    "falafel": "^2.0.0",
+    "falafel-new-acorn": "^2.0.0",
     "loader-utils": "^1.1.0"
   },
   "devDependencies": {
