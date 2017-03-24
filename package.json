@@ -1,6 +1,6 @@
 {
   "name": "ts-ng-annotate-loader",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wrapper around gulp-typescript-angular to use it as a webpack loader.",
   "main": "index.js",
   "scripts": {
